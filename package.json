@@ -1,12 +1,15 @@
 {
-  "name": "api-breakingnews",
+  "name": "api-insurancemanager",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "type": "module",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
-    "start": "node --no-warnings server.js",
-    "dev": "nodemon --no-warnings server.js "
+    "start": "node server.js",
+    "dev": "nodemon server.js "
   },
   "repository": {
     "type": "git",
