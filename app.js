@@ -25,7 +25,11 @@ app.use((req, res, next) => {
   else next();
 });
 
-app.use(cors());
+app.use(cors({
+  origin: [""],
+  methods: ["POST", "GET"],
+  credentials: true
+}));
 app.use(express.json());
 app.use(router);
 
